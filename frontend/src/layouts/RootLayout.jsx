@@ -8,10 +8,10 @@ function RootLayout() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <nav className="bg-gray-800 shadow-lg">
+      <nav className="bg-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-400">Auth App</h1>
-          <div className="flex space-x-6 items-center">
+          <h1 className="text-xl font-bold text-blue-400">Auth App</h1>
+          <div className="flex space-x-4 items-center">
             <Link to="/" className="text-gray-300 hover:text-blue-400 font-medium transition-colors duration-150">
               Home
             </Link>
@@ -31,11 +31,10 @@ function RootLayout() {
                 </Link>
               </>
             )}
-            {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </div>
         </div>
       </nav>
-      <main className="container mx-auto px-4 py-8">
+      <main>
         <Outlet />
       </main>
     </div>

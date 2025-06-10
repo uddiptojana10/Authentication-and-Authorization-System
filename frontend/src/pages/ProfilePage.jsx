@@ -14,7 +14,7 @@ import Profile from '../components/Profile';
 
        return (
          <div>
-           <h2 className="text-2xl font-bold mb-4 text-center">Your Profile</h2>
+           <h2 className="text-2xl font-bold mb-4 text-center"></h2>
            <Profile />
          </div>
        );
