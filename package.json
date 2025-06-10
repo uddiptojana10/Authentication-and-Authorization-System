@@ -1,0 +1,21 @@
+{
+  "name": "auth0-react-app",
+  "version": "1.0.0",
+  "description": "Monorepo for Auth App",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && node index.js",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "npm install && npm run install --workspaces"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
